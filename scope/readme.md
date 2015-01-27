@@ -23,7 +23,6 @@ console.log(city); // => calgary
 
 Here's an other example of let-scope variables in for-loop:
 
-
 ```js
 var i = 0;
 for(let i = i; i < 10; i++) {
@@ -31,3 +30,5 @@ for(let i = i; i < 10; i++) {
 }
 console.log(i); // => 0
 ```
+
+see [more examples]()

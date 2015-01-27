@@ -1,3 +1,7 @@
+/**
+ * Global and function scope.
+ */
+
 // bad
 name = 'olivier';
 
@@ -18,4 +22,19 @@ function loop() {
     // do stuff
   }
   console.log(l);
+}
+
+
+/**
+ * An example before with
+ * a function scope.
+ */
+
+function dummy() {
+  var x = 10;
+  if (true) {
+    var x = 20;
+    console.log(x);  // => 20
+  }
+  console.log(x);  // => 20
 }
