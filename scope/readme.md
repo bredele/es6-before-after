@@ -32,3 +32,20 @@ console.log(i); // => 0
 ```
 
 see [more examples](https://github.com/bredele/es6-before-after/blob/master/scope/after.js)
+
+## `const`
+
+`const` creates a read-only constant that can be global or local to the function in which it is declared (similar to `var` in terms of scope). It cannot be changed or re-declared. 
+
+```js
+
+const github = 'bredele';
+
+// trying to change a const will fail
+github = 'foo';
+
+console.log("my github is: " + github);
+
+// trying to redeclare a constant throws an error 
+const github = 'bar';
+```
