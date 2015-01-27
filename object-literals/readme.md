@@ -17,7 +17,7 @@ var greet = {
 
 <!--   > you also can use computed property names (see [symbol]()) -->
 
-There is also more contreversial such as making super calls or setting the prototype at construction: 
+There is also more contreversial features such as making super calls or setting the prototype at construction: 
 
 ```js
 function handler() {
