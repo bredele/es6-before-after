@@ -11,7 +11,7 @@ var city = 'paris';
 
 if(name === 'olivier') {
   let name = 'bredele';
-	var city = 'calgary';
+  var city = 'calgary';
 
   console.log(name); // => bredele
   console.log(city); // => calgary
@@ -26,9 +26,9 @@ Here's an other example of let-scope variables in for-loop:
 ```js
 var i = 0;
 for(let i = i; i < 10; i++) {
-	console.log(i);
+  console.log(i);
 }
 console.log(i); // => 0
 ```
 
-see [more examples]()
+see [more examples](https://github.com/bredele/es6-before-after/blob/master/scope/after.js)
