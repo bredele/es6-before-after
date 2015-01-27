@@ -5,7 +5,7 @@ Object literals are enhanced to support shortand assignments, properties accesso
 
 ```js
 var greet = {
-	name: 'olivier',
+  name: 'olivier',
   get hello() {
     return 'hello ' + this.name;
   },
