@@ -12,5 +12,11 @@ function mixin(to, from) {
 
 // clone
 function clone(obj){
-  return mixin({}, obj);
-};
+  var copy = {};
+  for (var key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      copy[key] = clone(obj[key]);
+    }
+  }
+  return copy;
+}
