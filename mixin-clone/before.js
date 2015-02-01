@@ -20,3 +20,18 @@ function clone(obj){
   }
   return copy;
 }
+
+// examples
+var foo = {
+  name: 'foo'
+};
+
+var bar = clone(foo);
+
+mixin(foo, {
+  github: 'bredele'
+});
+
+// foo.github => bredele
+// bar.github => undefined
+// bar.name; => foo
