@@ -1,6 +1,6 @@
 # Object assign	
 
-THe new object `assign` method allows to copy the values of all enumerable own properties from one object to an other.
+The new object `assign` method allows to copy the values of all enumerable own properties from one object to an other.
 
 
 ## clone
