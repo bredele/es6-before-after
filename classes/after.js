@@ -1,11 +1,25 @@
-class Foo {
+class Animal {
 
-  constructor() {
-    this.name = 'foo';
+  constructor(type = 'unknown') {
+    this.type = type;
   }
 
-  hello() {
-    return 'hello ' + this.name + '!';
+  who() {
+    return 'animal:' + this.type;
+  }
+  
+}
+
+
+
+class Dog extends Animal {
+
+  constructor(type) {
+    super(type);
+  }
+
+  noise() {
+    return 'woof!';
   }
   
 }

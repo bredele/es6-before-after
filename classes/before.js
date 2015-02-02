@@ -1,7 +1,36 @@
-function Foo() {
-  this.name = 'foo';
+// prototype
+function Pet(type) {
+  this.type = type;
 }
 
-Foo.prototype.hello = function() {
-  return 'hello ' + this.name + '!';
+Pet.prototype.who = function() {
+  return 'animal:' + this.type;
 };
+
+
+// factory 
+function Pet(type) {
+
+  this.who = function() {
+    return 'animal:' + type;
+  };
+
+}
+
+
+// factory inheritance 
+var Dog = (function() {
+
+  function Dog() {
+
+    this.noise = function() {
+      return 'woof!';
+    };
+  }
+
+  return function() {
+    Dog.prototype = new Pet('dog');
+    return new Dog();
+  };
+
+})();
