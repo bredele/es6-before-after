@@ -8,6 +8,21 @@ Pet.prototype.who = function() {
 };
 
 
+
+// prototype inheritance
+function Dog(type) {
+  Pet.call(this, type);
+}
+
+Dog.prototype = Pet.prototype;
+
+Pet.prototype.noise = function() {
+  return 'woof';
+};
+
+
+
+
 // factory 
 function Pet(type) {
 
