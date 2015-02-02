@@ -1,6 +1,11 @@
 class Foo {
-  name: 'foo',
+
+  constructor() {
+    this.name = 'foo';
+  }
+
   hello() {
     return 'hello ' + this.name + '!';
   }
+  
 }
