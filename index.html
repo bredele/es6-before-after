@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="consemu/dist/consemu.css"/>
+    <script src="6to5/browser.js"></script>
+    <script src="6to5/runtime.js"></script>
+    <script src="6to5/browser-polyfill.js"></script>
+    <script src="ace/src-min-noconflict/ace.js"></script>
+    <script src="consemu/dist/consemu.js"></script>
+    <script src="dat-gui/build/dat.gui.min.js"></script>
+    <script src="esprima.js"></script>
+    <script src="escope.js"></script>
+    <script src="q.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="rxjs/rx.lite.min.js"></script>
+    <script src="index.js" async></script>
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="title" class="header">
+        <b>ES6</b> playground &nbsp; &nbsp; http://kevinb7.github.io/es6-playground
+    </div>
+
+    <div id="container">
+
+        <div id="left">
+            <div class="header">
+                <select id="exampleSelector"></select>
+                <button id="runButton" style="float:right;">Run</button>
+            </div>
+            <div class="content">
+                <div id="editor"></div>
+            </div>
+        </div>
+        
+        <div id="right">
+            <div class="header">
+                <select id="leftSelector">
+                    <option value="console">console</option>
+                    <option value="output">compiled code</option>
+                    <option value="canvas">canvas</option>
+                </select>
+            </div>
+            <div class="content">
+                <div id="console" class="consemu"></div>
+                <div id="output" style="display:none;"></div>
+                <div id="canvas" style="display:none;">
+                    <canvas></canvas>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+</body>
+</html>
