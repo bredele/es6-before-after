@@ -74,7 +74,7 @@ var options = { loose: "classes", runtime: true, modules: "common" };
 
 var examples = [
     "let_const",
-    "arrow_functions",
+    "arrow",
     "templating",
     "objects",
     "symbols",
