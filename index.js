@@ -91,8 +91,8 @@ var examples = [
     "modules_4",
     "generator",
     "iterators",
-    "iterators_from_generators",
-    "promises"
+    "promises",
+    "quizz"
 ];
 
 var defaultOptions = {
