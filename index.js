@@ -105,8 +105,6 @@ var examples = [
     "promises",
     "generators_and_promises",
     "------",
-    "combinator_basics_1",
-    "combinator_basics_2",
     "partial_application",
     "currying"
 ];

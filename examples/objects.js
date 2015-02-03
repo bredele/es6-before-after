@@ -1,17 +1,12 @@
-var propName = "y";
-
-var obj = {
-    x: 5,
-    [propName]: 10, 
-    scale(k) {
-        this.x *= k;
-        this.y *= k;
-    },
-    get sum() {
-        return this.x + this.y;
-    }
+var computed = 'something';
+var user = {
+	name: 'olivier',
+	get hello() {
+		return 'hello ' + this.name;
+	},
+	[computed] : true
 };
 
-console.log(`obj.sum = ${obj.sum}`);
-obj.scale(2);
-console.log(`obj.sum = ${obj.sum}`);
+
+console.log(user.hello);
+console.log(user[computed]);
