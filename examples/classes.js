@@ -1,26 +1,26 @@
-class User {
-    constructor(firstName = "John", lastName = "Doe") {
-        Object.assign(this, { firstName, lastName });
-    }
+class Animal {
+  constructor(type = 'unknown') {
+  	this.type = type;
+  }
 
-    get fullName() {
-        return `${this.firstName} ${this.lastName}`;
-    }
-    
-    set age(value) {
-        this._age = value;
-    }
-    
-    get age() {
-        return this._age;
-    }
-    
-    toString() {
-        return `${this.fullName} is ${this.age} years old`;
-    }
+  toString() {
+  	return `type is ${this.type}`;
+  }
 }
 
-var user = new User();
-console.log("fullName = " + user.fullName);
-user.age = 23;
-console.log(user);
+class Dog extends Animal {
+	constructor() {
+		super('dog');
+	}
+
+	noise() {
+		return 'woof';
+	}
+}
+
+var animal = new Animal();
+console.log(animal.toString());
+
+var dog = new Dog();
+console.log(dog.toString());
+

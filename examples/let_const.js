@@ -1,23 +1,23 @@
-function main() {
+(function() {
+  let name = 'olivier';
+  if(name === 'olivier') {
+    let name = 'amy';
+    console.log(name);
+  }
+  console.log(name);
+})();
 
-    for (let i = 0; i < 5; i++) {
-        console.log(`i = ${i}`);
-    }
 
-    try {
-        console.log(`i = ${i}`);
-    } catch (e) {
-        console.log(e);
-    }
+(function() {
+  for(let i = 0; i < 10; i++) {
+    console.log(i);
+  }
+  console.log(i);
+})();
 
-    for (let i = 0; i < 5; i++) {   // passes lint
-        console.log(`i = ${i}`);
-    }
 
-    const PI = 3.141592;
-
-    // compile time error
-    // PI = 3.14;
-}
-
-main();
+(function() {
+  const hello = 'world';
+  hello = 'hello';
+  console.log(hello);
+})();
