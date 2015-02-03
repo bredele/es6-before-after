@@ -1,14 +1,12 @@
-var tags = new Set();
+var users = new Set();
+users.add('olivier');
+users.add('bruno');
+users.add('amy');
 
-tags.add("dog");
-console.log(`tags.has("dog") = ${tags.has("dog")}`);
-tags.delete("dog");
-console.log(`tags.has("dog") = ${tags.has("dog")}`);
+console.log(users.has('amy'));
+users.delete('amy');
+console.log(users.has('amy'));
 
-console.log("\n");
-
-var colors = new Set(["blue", "green", "purple", "blue", "green", "orange"]);
-
-for (let color of colors) {
-    console.log(color);
+for(let user of users) {
+	console.log(user);
 }
