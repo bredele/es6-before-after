@@ -91,7 +91,6 @@ var examples = [
     "classes",
     "inheritance", 
     "event_handlers",
-    "rxjs",
     "------",
     "modules_1",
     "modules_2",
