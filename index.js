@@ -78,30 +78,21 @@ var examples = [
     "templating",
     "objects",
     "symbols",
-    "------",
     "destructuring",
     "rest",
     "spread",
-    "------",
     "for_of",
     "map",
     "set",
-    "------",
     "classes",
-    "inheritance",
-    "------",
     "modules_1",
     "modules_2",
     "modules_3",
     "modules_4",
-    "------",
     "generator",
     "iterators",
     "iterators_from_generators",
-    "promises",
-    "------",
-    "partial_application",
-    "currying"
+    "promises"
 ];
 
 var defaultOptions = {
